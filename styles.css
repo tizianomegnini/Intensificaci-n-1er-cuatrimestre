@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { 
+    font-family: 'roboto', sans-serif;
+    background-color: #ffffff;
+}
+nav {
+    position: fixed;
+    height: 3.125em;
+    width: 100%;
+    background-color: #00000070;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25em;
+    z-index: 100;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    left: 1.25em;
+}
+nav ul li {
+    margin: 0 0.625em;
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.875em;
+
+}
+nav h1 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+.dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10em;
+    box-shadow: 0px 0.5em 1em rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0.625em;
+    transform: translateY(0.625em);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    border-radius: 0.5em;
+}
+.dropdown-content li {
+    margin: 0.313em 0;
+}
+.dropdown-content li a {
+    color: #000;
+    text-decoration: none;
+    padding: 0.625em;
+    display: block;
+    border-radius: 0.25em;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.dropdown-content li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+.banner {
+    margin-top: 0em;
+    position: relative;
+    overflow: hidden;
+}
+.banner-images img {
+    width: 100%;
+    height: 43.75em;
+    display: none;
+}
+.banner-images img.active {
+    display: block;
+}
+.arrows {
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.arrows span {
+    padding-top: 0.5em;
+    padding-left: 0.8em;
+    padding-right: 0.625em;
+    height: 2.5em;
+    width: 1.875em;
+    font-size: 1.875em;
+    cursor: pointer;
+    border-radius: 0.625em;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25em;
+    padding: 2.50em;
+}
+.card {
+    background-color: #f0f0f0;
+    padding: 1.25em;
+    text-align: center;
+    font-size: 1.125em;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    transition: transform 1s;
+}
+.card img{
+    background-image: linear-gradient(to bottom, #1d5294 100%, transparent 30%);
+    border-radius: 0.5em;
+    height: 18.75em;
+    width: 17.5em;
+}
+.card:hover {
+    transform: scale(1.05);
+    background-color: #1d5294;
+    color: #f0f0f0;
+}
+footer {
+    height: 700px;
+    background: linear-gradient(to bottom, #ffffff 0%, transparent 30%), url('/img/El-logotipo-de-Volkswagen-significado-e-historia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    color: #fff;
+    padding: 1.25em;
+    display: flex;
+    justify-content: space-between;
+}
+#instagram{
+    color: #f0f0f0;
+    animation: insta 5s ease infinite;
+}
+@keyframes insta{
+     15%{
+        color: #007bff;
+     }
+     30%{
+        color: #00ff6a;
+     }
+     45%{
+        color: #51ff00;
+     }
+     60%{
+        color: #ff4800;
+     }
+     75%{
+        color: #ff0062;
+     }
+     90%{
+        color: #007bff;
+     }
+}
+#facebook{
+    color: #ffffff;
+    animation: face 5s ease infinite;
+}
+@keyframes face{
+    33.33%{
+    color: #ffffff;
+    }
+    66.66%{
+    color: #0059ff;
+    }
+    99.99%{
+    color: #ffffff;
+    }
+}
+#youtube{
+    color: #ffffff;
+    animation: you 5s ease infinite;
+}
+@keyframes you{
+    33.33%{
+    color: #ffffff;
+    }
+    66.66%{
+    color: #ff0000;
+    }
+    99.99%{
+    color: #ffffff;
+    }
+}
+#tiktok{
+    color: #ffffff;
+    animation: tik 5s ease infinite;
+}
+@keyframes tik{
+    0%{
+    color: #ffffff;
+    }
+    20%{
+    color: #ffffff;
+    }
+    40%{
+    color: #ff6060;
+    }
+    60%{
+    color: #0099ad;
+    }
+    80%{
+    color: #ffffff;
+    }
+    100%{
+    color: #ffffff;
+    }
+
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1.25em;
+}
+footer .location {
+    margin-top: 80px;
+    width: 25em;
+    height: em;
+    margin-right: 12.5em;
+    border-radius: 0em;
+}
+.licencia{
+    margin-top: 230px;
+    margin-left: -15px;
+}
+.legal{
+    margin-top: 70px;
+}
+.contrato{
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 40px;
+}
